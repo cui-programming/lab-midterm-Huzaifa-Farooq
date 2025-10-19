@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, FlatList} from 'react-native'; // You may switch Text to ui/Text later
+import { View, FlatList } from 'react-native'; // You may switch Text to ui/Text later
 import { styles } from '../../styles/styles';
 import Button from '../ui/Button';
 import Text from '../ui/Text';
@@ -38,8 +38,8 @@ export default function TasbihList({ initialAzkaar }) {
     <View style={styles.itemRow}>
       <Text style={styles.itemName}>{item.phrase}</Text>
       <Text style={styles.counter}>{item.count}</Text>
-        <Button style={styles.button} children="+" onPress={() => increment(item.id)} />
-        <Button style={styles.button} children="-" onPress={() => decrement(item.id)} />
+      <Button style={styles.button} children="+" onPress={() => increment(item.id)} />
+      <Button style={styles.button} children="-" onPress={() => decrement(item.id)} />
     </View>
   );
 

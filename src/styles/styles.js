@@ -1,20 +1,15 @@
 import { StyleSheet } from 'react-native';
 
-/**
- * 👉 Students: create all your styles here.
- * Start with: container, headerText, sectionTitle, itemRow, itemName, counter, input, button, etc.
- * Keep style names semantic.
- */
 export const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
     paddingVertical: 20,
-    backgroundColor: '#007b83',
+    backgroundColor: '#0f172a', // dark header background
     marginBottom: 20,
   },
 
   headerText: {
-    color: '#fff',
+    color: '#FFFFFFFF', // warm gold
     fontSize: 20,
     fontWeight: 'bold',
   },
@@ -22,17 +17,19 @@ export const styles = StyleSheet.create({
   itemRow: {
     margin: 5,
     flexDirection: 'row',
-    // alignItems: 'center',
+    maxWidth: 500
   },
+
   itemName: {
     flex: 1,
   },
+
   counter: {
-    flex: 1
+    flex: 1,
   },
 
   button: {
-    backgroundColor: '#26a69a',
+    backgroundColor: '#0d9488',
     paddingVertical: 6,
     paddingHorizontal: 12,
     borderRadius: 6,
@@ -40,7 +37,7 @@ export const styles = StyleSheet.create({
   },
 
   addZikrButton: {
-    backgroundColor: '#26a69a',
+    backgroundColor: '#0d9488',
     paddingVertical: 6,
     paddingHorizontal: 12,
     borderRadius: 6,
@@ -49,16 +46,14 @@ export const styles = StyleSheet.create({
   },
 
   textInput: {
-    backgroundColor: '#ffffff',
     borderWidth: 1,
-    borderColor: '#cbd5e1',
+    borderColor: '#334155',
     borderRadius: 10,
     paddingHorizontal: 7,
     paddingVertical: 5,
     margin: 5,
     fontSize: 13,
     width: '40%',
-    color: '#111827',
   },
 
   section: {
@@ -66,12 +61,11 @@ export const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 20,
   },
+
   sectionTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#333',
     marginBottom: 10,
     textAlign: 'center',
   },
-
 });

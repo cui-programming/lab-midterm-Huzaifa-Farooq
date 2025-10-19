@@ -24,7 +24,7 @@ export default function App() {
       return;
     }
     
-    setAzkaar([...azkaar, { id: azkaar.length.toString(), phrase: newZikr, count: count }]);
+    setAzkaar([...azkaar, { id: new Date().toUTCString(), phrase: newZikr, count: count }]);
   }
 
   const filteredAzkaar = azkaar.filter((azkar) =>

@@ -43,7 +43,7 @@ export default function SearchAndAdd({ onZikrAdd, onSetSearch, searchText }) {
         style={styles.textInput}
       />
       <Button style={styles.addZikrButton} children="Add Zikr" onPress={addZikr} />
-      
+
     </View>
   );
 }
